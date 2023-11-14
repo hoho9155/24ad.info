@@ -1,0 +1,10 @@
+{
+    "name": "reviews",
+    "version": "4.0.2",
+    "display_name": "Reviews",
+    "description": "Reviews System",
+    "author": "Bedigit",
+    "category": "item-module",
+    "has_installer": true,
+    "item_id": "20441932"
+}

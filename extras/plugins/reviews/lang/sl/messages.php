@@ -1,0 +1,48 @@
+<?php
+
+return [
+    'Reviews' => 'Mnenja',
+    'Review' => 'Mnenje',
+    'Reviews system' => 'Sistem mnenj',
+    'Ratings' => 'Ocene',
+    'Rating' => 'Ocena',
+    'count_reviews' => '{0} mnenje|{1} mnenje|[2,*] mnenja',
+    'count_stars' => '{0} zvezdica|{1} zvezdica|[2,*] zvezdice',
+    'count_ratings' => '{0} ocena|{1} ocena|[2,*] ocene',
+    'There were errors while submitting this review' => 'Pri oddajanju tega mnenja so se pojavile napake',
+    'review_posted' => 'Vaše mnenje je bilo objavljeno!',
+    'Your review has been removed!' => 'Vaše mnenje je bilo odstranjeno!',
+    'Enter your review here...' => 'Vnesite svoje mnenje tukaj...',
+    'Leave a Review' => 'Ostavite mnenje',
+    'Anonymous' => 'Anonimno',
+    'Delete' => 'Izbriši',
+    'Listing' => 'Oglas',
+    'Comments' => 'Komentarji',
+    'Comment' => 'Komentar',
+    'Approved' => 'Odobreno',
+    'Spam' => 'Neželeno',
+    'User' => 'Uporabnik',
+    'Note' => 'Opomba',
+    'You must be logged in to post a review.' => 'Za oddajo mnenja se morate prijaviti.',
+    'validation' => [
+        'comment' => [
+            'required' => 'Polje komentarja je obvezno.',
+            'min' => 'Polje :attribute mora vsebovati vsaj :min znakov.',
+            'max' => 'Polje :attribute ne sme vsebovati več kot :max znakov.',
+        ],
+        'rating' => [
+            'required' => 'Ocena (z zvezdicami) je obvezna.',
+            'integer'  => ':attribute mora biti celo število.',
+            'between' => ':attribute mora biti med :min in :max.',
+        ],
+    ],
+    'guests_comments_label' => 'Dovoli gostom, da objavljajo mnenja',
+    'guests_comments_hint' => 'Dovoli gostom, da objavljajo ocene in komentarje',
+    'Manage' => 'Upravljaj',
+    'You cannot add reviews for your own listings.' => 'Za svoje oglase ne morete dodajati mnenj.',
+    'Your listing has no reviews yet.' => 'Vaš oglas nima še nobenih mnenj.',
+    'This listing has no reviews yet. Be the first to leave a review.' => 'Ta oglas nima še nobenih mnenj. Bodite prvi, ki bo pustil mnenje.',
+    'review_not_found' => 'Mnenje ni bilo najdeno.',
+    'no_reviews_found' => 'Ni najdenih mnenj.',
+    
+];

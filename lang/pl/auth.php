@@ -1,0 +1,27 @@
+<?php 
+
+return [
+    'failed' => 'Te dane uwierzytelniające nie pasują do naszych danych.',
+    'throttle' => 'Zbyt wiele prób logowania. Spróbuj ponownie za :seconds sekund.',
+    'login' => 'Zaloguj sie',
+    'register' => 'Rejestr',
+    'account_info' => 'Informacje o koncie',
+    'change_info' => 'Zmień informacje',
+    'change_password' => 'Zmień hasło',
+    'logout' => 'Wyloguj',
+    'remember_me' => 'Zapamiętaj mnie',
+    'information_updated' => 'Twoje informacje zostały zaktualizowane.',
+    'name' => 'Nazwa',
+    'email' => 'E-mail',
+    'password' => 'Hasło',
+    'confirm_password' => 'Potwierdź hasło',
+    'old_password' => 'Stare hasło',
+    'new_password' => 'nowe hasło',
+    'cancel' => 'Anulować',
+    'reset_password' => 'Zresetuj hasło',
+    'send_password_reset_link' => 'Wyślij łącze resetowania hasła',
+    'forgot_password_question' => 'Zapomniałeś hasła?',
+    'wrong_password' => 'Wprowadzone stare hasło jest nieprawidłowe.',
+    'password_updated' => 'Twoje hasło zostało zmienione.',
+    'registration_closed' => 'Rejestracja jest zamknięta.',
+];

@@ -1,0 +1,48 @@
+<?php
+
+return [
+    'Reviews' => 'समीक्षाएँ',
+    'Review' => 'समीक्षा',
+    'Reviews system' => 'समीक्षा प्रणाली',
+    'Ratings' => 'रेटिंग्स',
+    'Rating' => 'रेटिंग',
+    'count_reviews' => '{0} समीक्षा|{1} समीक्षा|[2,*] समीक्षाएँ',
+    'count_stars' => '{0} स्टार|{1} स्टार|[2,*] स्टार्स',
+    'count_ratings' => '{0} रेटिंग|{1} रेटिंग|[2,*] रेटिंग्स',
+    'There were errors while submitting this review' => 'इस समीक्षा को सबमिट करते समय त्रुटियाँ थीं',
+    'review_posted' => 'आपकी समीक्षा पोस्ट की गई है!',
+    'Your review has been removed!' => 'आपकी समीक्षा हटा दी गई है!',
+    'Enter your review here...' => 'यहाँ अपनी समीक्षा दर्ज करें...',
+    'Leave a Review' => 'समीक्षा छोड़ें',
+    'Anonymous' => 'गुमनाम',
+    'Delete' => 'हटाएं',
+    'Listing' => 'लिस्टिंग',
+    'Comments' => 'टिप्पणियाँ',
+    'Comment' => 'टिप्पणी',
+    'Approved' => 'मंजूर किया गया',
+    'Spam' => 'स्पैम',
+    'User' => 'उपयोगकर्ता',
+    'Note' => 'टिप्पणी',
+    'You must be logged in to post a review.' => 'आपको एक समीक्षा पोस्ट करने के लिए लॉग इन करना होगा।',
+    'validation' => [
+        'comment' => [
+            'required' => 'टिप्पणी का फील्ड आवश्यक है।',
+            'min' => ':attribute कम से कम :min अक्षरों का होना चाहिए।',
+            'max' => ':attribute :max अक्षरों से अधिक नहीं हो सकता।',
+        ],
+        'rating' => [
+            'required' => 'रेटिंग (स्टार्स के साथ) आवश्यक है।',
+            'integer'  => ':attribute को पूर्णांक होना चाहिए।',
+            'between' => ':attribute :min और :max के बीच होनी चाहिए।',
+        ],
+    ],
+    'guests_comments_label' => 'मेहमानों को समीक्षा पोस्ट करने की अनुमति दें',
+    'guests_comments_hint' => 'मेहमान उपयोगकर्ताओं को रेटिंग और टिप्पणियाँ पोस्ट करने की अनुमति दें',
+    'Manage' => 'प्रबंधन',
+    'You cannot add reviews for your own listings.' => 'आप अपनी खुद की लिस्टिंग के लिए समीक्षा नहीं जोड़ सकते।',
+    'Your listing has no reviews yet.' => 'आपकी लिस्टिंग का अब तक कोई समीक्षा नहीं है।',
+    'This listing has no reviews yet. Be the first to leave a review.' => 'इस लिस्टिंग का अब तक कोई समीक्षा नहीं है। पहला समीक्षा छोड़ने वाले बनें।',
+    'review_not_found' => 'समीक्षा नहीं मिली।',
+    'no_reviews_found' => 'कोई समीक्षा नहीं मिली।',
+    
+];

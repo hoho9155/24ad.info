@@ -1,0 +1,48 @@
+<?php
+
+return [
+    'Reviews' => 'Atsauksmes',
+    'Review' => 'Atsauksme',
+    'Reviews system' => 'Atsauksmju sistēma',
+    'Ratings' => 'Vērtējumi',
+    'Rating' => 'Vērtējums',
+    'count_reviews' => '{0} atsauksme|{1} atsauksme|[2,*] atsauksmes',
+    'count_stars' => '{0} zvaigzne|{1} zvaigzne|[2,*] zvaigznes',
+    'count_ratings' => '{0} vērtējums|{1} vērtējums|[2,*] vērtējumi',
+    'There were errors while submitting this review' => 'Iesniedzot šo atsauksmi, radās kļūdas',
+    'review_posted' => 'Jūsu atsauksme ir publicēta!',
+    'Your review has been removed!' => 'Jūsu atsauksme ir noņemta!',
+    'Enter your review here...' => 'Ievadiet savu atsauksmi šeit...',
+    'Leave a Review' => 'Rakstīt atsauksmi',
+    'Anonymous' => 'Anonīms',
+    'Delete' => 'Dzēst',
+    'Listing' => 'Ieraksts',
+    'Comments' => 'Komentāri',
+    'Comment' => 'Komentārs',
+    'Approved' => 'Apstiprināts',
+    'Spam' => 'Spams',
+    'User' => 'Lietotājs',
+    'Note' => 'Piezīme',
+    'You must be logged in to post a review.' => 'Lai publicētu atsauksmi, jums jāpiesakās.',
+    'validation' => [
+        'comment' => [
+            'required' => 'Komentāra lauks ir obligāts.',
+            'min' => ':attribute jābūt vismaz :min rakstzīmju garumā.',
+            'max' => ':attribute nedrīkst būt garāks par :max rakstzīmēm.',
+        ],
+        'rating' => [
+            'required' => 'Vērtējums (zvaigznēs) ir obligāts.',
+            'integer'  => ':attribute jābūt veselam skaitlim.',
+            'between' => ':attribute jābūt starp :min un :max.',
+        ],
+    ],
+    'guests_comments_label' => 'Atļaut viesiem publicēt atsauksmes',
+    'guests_comments_hint' => 'Atļaut viesiem publicēt vērtējumus un komentārus',
+    'Manage' => 'Pārvaldīt',
+    'You cannot add reviews for your own listings.' => 'Jūs nevarat pievienot atsauksmes savai paša ierakstam.',
+    'Your listing has no reviews yet.' => 'Jūsu ierakstam vēl nav atsauksmju.',
+    'This listing has no reviews yet. Be the first to leave a review.' => 'Šim ierakstam vēl nav atsauksmju. Būsiet pirmais, kurš atstāj atsauksmi.',
+    'review_not_found' => 'Atsauksme nav atrasta.',
+    'no_reviews_found' => 'Atsauksmes nav atrastas.',
+    
+];

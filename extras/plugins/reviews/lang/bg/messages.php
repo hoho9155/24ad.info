@@ -1,0 +1,48 @@
+<?php
+
+return [
+    'Reviews' => 'পর্যালোচনা',
+    'Review' => 'পর্যালোচনা',
+    'Reviews system' => 'পর্যালোচনা সিস্টেম',
+    'Ratings' => 'রেটিং',
+    'Rating' => 'রেটিং',
+    'count_reviews' => '{0} পর্যালোচনা|{1} পর্যালোচনা|[2,*] পর্যালোচনা',
+    'count_stars' => '{0} স্টার|{1} স্টার|[2,*] স্টার',
+    'count_ratings' => '{0} রেটিং|{1} রেটিং|[2,*] রেটিং',
+    'There were errors while submitting this review' => 'এই পর্যালোচনা জমা দেয়ার সময় সমস্যা হয়েছে',
+    'review_posted' => 'আপনার পর্যালোচনা পোস্ট হয়েছে!',
+    'Your review has been removed!' => 'আপনার পর্যালোচনা সরানো হয়েছে!',
+    'Enter your review here...' => 'এখানে আপনার পর্যালোচনা লিখুন...',
+    'Leave a Review' => 'পর্যালোচনা ছেড়ে দিন',
+    'Anonymous' => 'গোপন',
+    'Delete' => 'মুছে ফেলুন',
+    'Listing' => 'তালিকা',
+    'Comments' => 'মন্তব্য',
+    'Comment' => 'মন্তব্য',
+    'Approved' => 'অনুমোদিত',
+    'Spam' => 'স্প্যাম',
+    'User' => 'ব্যবহারকারী',
+    'Note' => 'মন্তব্য',
+    'You must be logged in to post a review.' => 'পর্যালোচনা পোস্ট করতে আপনাকে লগ ইন করতে হবে।',
+    'validation' => [
+        'comment' => [
+            'required' => 'মন্তব্য ক্ষেত্রটি প্রয়োজন।',
+            'min' => ':attribute অবশ্যই অন্তত :min টি অক্ষর হতে হবে।',
+            'max' => ':attribute অধিকতর হতে পারে না :max টি অক্ষর।',
+        ],
+        'rating' => [
+            'required' => 'স্টারের রেটিং প্রয়োজন।',
+            'integer'  => ':attribute অবশ্যই পূর্ণসংখ্যা হতে হবে।',
+            'between' => ':attribute অবশ্যই :min থেকে :max মধ্যে হতে হবে।',
+        ],
+    ],
+    'guests_comments_label' => 'অতিথিরা পর্যালোচনা পোস্ট করতে অনুমতি দিন',
+    'guests_comments_hint' => 'অতিথি ব্যবহারকারীদের রেটিং এবং মন্তব্য পোস্ট করতে অনুমতি দিন',
+    'Manage' => 'পরিচালনা',
+    'You cannot add reviews for your own listings.' => 'আপনি আপনার নিজস্ব তালিকার জন্য পর্যালোচনা যোগ করতে পারবেন না।',
+    'Your listing has no reviews yet.' => 'আপনার তালিকার জন্য এখনো কোনো পর্যালোচনা নেই।',
+    'This listing has no reviews yet. Be the first to leave a review.' => 'এই তালিকাটি এখনো কোনো পর্যালোচনা নেই। প্রথম পর্যালোচনা ছেড়ে দিন।',
+    'review_not_found' => 'পর্যালোচনা পাওয়া যায়নি।',
+    'no_reviews_found' => 'কোনো পর্যালোচনা পাওয়া যায়নি।',
+
+];

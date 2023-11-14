@@ -1,0 +1,48 @@
+<?php
+
+return [
+    'Reviews' => 'მიმოხილვები',
+    'Review' => 'მიმოხილვა',
+    'Reviews system' => 'მიმოხილვის სისტემა',
+    'Ratings' => 'რეიტინგები',
+    'Rating' => 'რეიტინგი',
+    'count_reviews' => '{0} მიმოხილვა|{1} მიმოხილვა|[2,*] მიმოხილვები',
+    'count_stars' => '{0} ვარსკვლავი|{1} ვარსკვლავი|[2,*] ვარსკვლავები',
+    'count_ratings' => '{0} რეიტინგი|{1} რეიტინგი|[2,*] რეიტინგები',
+    'There were errors while submitting this review' => 'შეცდომები წარმოადგინეს მიმოხილვის გაგზავნის დროს',
+    'review_posted' => 'თქვენი მიმოხილვა გამოაქვეყნა!',
+    'Your review has been removed!' => 'თქვენი მიმოხილვა წაიშალა!',
+    'Enter your review here...' => 'შეიყვანეთ თქვენი მიმოხილვა აქ...',
+    'Leave a Review' => 'დატოვეთ მიმოხილვა',
+    'Anonymous' => 'ანონიმური',
+    'Delete' => 'წაშლა',
+    'Listing' => 'ჩამონათვალი',
+    'Comments' => 'კომენტარები',
+    'Comment' => 'კომენტარი',
+    'Approved' => 'დადასტურებული',
+    'Spam' => 'სპამი',
+    'User' => 'მომხმარე',
+    'Note' => 'შენიშვნა',
+    'You must be logged in to post a review.' => 'თქვენ უნდა შესული იყოთ მიმოხილვის გასაგზავნი თქვენს გვერდზე.',
+    'validation' => [
+        'comment' => [
+            'required' => 'კომენტარის ველი აუცილებელია.',
+            'min' => ':attribute უნდა იყოს მინიმუმ :min სიმბოლო.',
+            'max' => ':attribute არ უნდა აღმოაჩენოს :max სიმბოლოსგან მეტი.',
+        ],
+        'rating' => [
+            'required' => 'რეიტინგი (ვარსკვლავებით) აუცილებელია.',
+            'integer'  => ':attribute უნდა იყოს მთლიანი რიცხვი.',
+            'between' => ':attribute უნდა იყოს :min და :max შორის.',
+        ],
+    ],
+    'guests_comments_label' => 'საშინელებას სასტუმრო მომხმარებლებს შეუძლიათ მიმოხილვა',
+    'guests_comments_hint' => 'საშინელებას სასტუმრო მომხმარებლებს შეუძლიათ მიმოხილვა და კომენტარების მისაღებად',
+    'Manage' => 'მართვა',
+    'You cannot add reviews for your own listings.' => 'თქვენ ვერ დაამატებთ თქვენს თვალთამსებელს მიმოხილვას.',
+    'Your listing has no reviews yet.' => 'თქვენი ჩამონათვალი ჯერ არ აქვს მიმოხილვები.',
+    'This listing has no reviews yet. Be the first to leave a review.' => 'ამ ჩამონათვალს ჯერ არ აქვს მიმოხილვები. იყენებთ პირველთ რევიუს დაწერას.',
+    'review_not_found' => 'მიმოხილვა ვერ მოიძებნა.',
+    'no_reviews_found' => 'მიმოხილვაები ვერ მოიძებნა.',
+    
+];

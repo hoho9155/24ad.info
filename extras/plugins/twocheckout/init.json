@@ -1,0 +1,10 @@
+{
+    "name": "twocheckout",
+    "version": "3.0.0",
+    "display_name": "2Checkout",
+    "description": "Payment with 2Checkout",
+    "author": "Bedigit",
+    "category": "payment",
+    "has_installer": true,
+    "item_id": "19700698"
+}

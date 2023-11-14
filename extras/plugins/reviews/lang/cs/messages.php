@@ -1,0 +1,48 @@
+<?php
+
+return [
+    'Reviews' => 'Recenze',
+    'Review' => 'Recenze',
+    'Reviews system' => 'Systém recenzí',
+    'Ratings' => 'Hodnocení',
+    'Rating' => 'Hodnocení',
+    'count_reviews' => '{0} recenze|{1} recenze|[2,*] recenzí',
+    'count_stars' => '{0} hvězda|{1} hvězda|[2,*] hvězdy',
+    'count_ratings' => '{0} hodnocení|{1} hodnocení|[2,*] hodnocení',
+    'There were errors while submitting this review' => 'Při odesílání této recenze došlo k chybám',
+    'review_posted' => 'Vaše recenze byla odeslána!',
+    'Your review has been removed!' => 'Vaše recenze byla odstraněna!',
+    'Enter your review here...' => 'Zadejte zde svou recenzi...',
+    'Leave a Review' => 'Zanechte recenzi',
+    'Anonymous' => 'Anonymní',
+    'Delete' => 'Smazat',
+    'Listing' => 'Zápis',
+    'Comments' => 'Komentáře',
+    'Comment' => 'Komentář',
+    'Approved' => 'Schváleno',
+    'Spam' => 'Spam',
+    'User' => 'Uživatel',
+    'Note' => 'Poznámka',
+    'You must be logged in to post a review.' => 'Abyste mohli napsat recenzi, musíte být přihlášeni.',
+    'validation' => [
+        'comment' => [
+            'required' => 'Pole komentáře je povinné.',
+            'min' => ':attribute musí mít alespoň :min znaků.',
+            'max' => ':attribute nesmí mít více než :max znaků.',
+        ],
+        'rating' => [
+            'required' => 'Hodnocení (hvězdami) je povinné.',
+            'integer'  => ':attribute musí být celé číslo.',
+            'between' => ':attribute musí být mezi :min a :max.',
+        ],
+    ],
+    'guests_comments_label' => 'Povolit hostům odesílat recenze',
+    'guests_comments_hint' => 'Povolit hostům odesílat hodnocení a komentáře',
+    'Manage' => 'Spravovat',
+    'You cannot add reviews for your own listings.' => 'Nemůžete přidávat recenze k vlastním zápisům.',
+    'Your listing has no reviews yet.' => 'Váš zápis zatím nemá žádné recenze.',
+    'This listing has no reviews yet. Be the first to leave a review.' => 'Tento zápis zatím nemá žádné recenze. Buďte prvním, kdo zanechá recenzi.',
+    'review_not_found' => 'Recenze nebyla nalezena.',
+    'no_reviews_found' => 'Nebyly nalezeny žádné recenze.',
+    
+];

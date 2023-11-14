@@ -1,0 +1,10 @@
+{
+    "name": "domainmapping",
+    "version": "5.0.1",
+    "display_name": "Domain Mapping",
+    "description": "Domain Mapping Plugin",
+    "author": "Bedigit",
+    "category": "tool",
+    "has_installer": true,
+    "item_id": "22079730"
+}

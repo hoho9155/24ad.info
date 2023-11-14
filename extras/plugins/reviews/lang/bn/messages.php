@@ -1,0 +1,48 @@
+<?php
+
+return [
+    'Reviews' => 'Отзиви',
+    'Review' => 'Отзив',
+    'Reviews system' => 'Система за отзиви',
+    'Ratings' => 'Рейтинги',
+    'Rating' => 'Рейтинг',
+    'count_reviews' => '{0} отзив|{1} отзив|[2,*] отзива',
+    'count_stars' => '{0} звезда|{1} звезда|[2,*] звезди',
+    'count_ratings' => '{0} рейтинг|{1} рейтинг|[2,*] рейтинга',
+    'There were errors while submitting this review' => 'Имаше грешки при изпращането на този отзив',
+    'review_posted' => 'Вашият отзив беше публикуван!',
+    'Your review has been removed!' => 'Вашият отзив беше премахнат!',
+    'Enter your review here...' => 'Въведете вашия отзив тук...',
+    'Leave a Review' => 'Оставете отзив',
+    'Anonymous' => 'Анонимен',
+    'Delete' => 'Изтрий',
+    'Listing' => 'Обява',
+    'Comments' => 'Коментари',
+    'Comment' => 'Коментар',
+    'Approved' => 'Одобрено',
+    'Spam' => 'Спам',
+    'User' => 'Потребител',
+    'Note' => 'Бележка',
+    'You must be logged in to post a review.' => 'Трябва да влезете в профила си, за да публикувате отзив.',
+    'validation' => [
+        'comment' => [
+            'required' => 'Полето за коментар е задължително.',
+            'min' => ':attribute трябва да бъде поне :min символа.',
+            'max' => ':attribute не може да бъде повече от :max символа.',
+        ],
+        'rating' => [
+            'required' => 'Рейтингът (по звезди) е задължителен.',
+            'integer'  => ':attribute трябва да бъде цяло число.',
+            'between' => ':attribute трябва да бъде между :min и :max.',
+        ],
+    ],
+    'guests_comments_label' => 'Разрешение за публикуване на отзиви от гости',
+    'guests_comments_hint' => 'Позволяване на гостите да публикуват рейтинги и коментари',
+    'Manage' => 'Управление',
+    'You cannot add reviews for your own listings.' => 'Не можете да добавяте отзиви за своите собствени обяви.',
+    'Your listing has no reviews yet.' => 'Вашата обява няма все още отзиви.',
+    'This listing has no reviews yet. Be the first to leave a review.' => 'Тази обява все още няма отзиви. Бъдете първият, който ще остави отзив.',
+    'review_not_found' => 'Отзивът не е намерен.',
+    'no_reviews_found' => 'Няма намерени отзиви.',
+    
+];

@@ -1,0 +1,17 @@
+{
+    "name": "hoho9155/postal-codes",
+    "autoload": {
+        "psr-4": {
+            "Hoho9155\\PostalCodes\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "hoho",
+            "email": "hoho915571@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.7"
+    }
+}

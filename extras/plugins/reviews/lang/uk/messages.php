@@ -1,0 +1,48 @@
+<?php
+
+return [
+    'Reviews' => 'Відгуки',
+    'Review' => 'Відгук',
+    'Reviews system' => 'Система відгуків',
+    'Ratings' => 'Рейтинги',
+    'Rating' => 'Рейтинг',
+    'count_reviews' => '{0} відгук|{1} відгук|[2,*] відгуки',
+    'count_stars' => '{0} зірка|{1} зірка|[2,*] зірки',
+    'count_ratings' => '{0} рейтинг|{1} рейтинг|[2,*] рейтинги',
+    'There were errors while submitting this review' => 'Під час надсилання цього відгуку виникли помилки',
+    'review_posted' => 'Ваш відгук опубліковано!',
+    'Your review has been removed!' => 'Ваш відгук було видалено!',
+    'Enter your review here...' => 'Введіть свій відгук тут...',
+    'Leave a Review' => 'Залишити відгук',
+    'Anonymous' => 'Анонімно',
+    'Delete' => 'Видалити',
+    'Listing' => 'Оголошення',
+    'Comments' => 'Коментарі',
+    'Comment' => 'Коментар',
+    'Approved' => 'Затверджено',
+    'Spam' => 'Спам',
+    'User' => 'Користувач',
+    'Note' => 'Примітка',
+    'You must be logged in to post a review.' => 'Ви повинні увійти, щоб залишити відгук.',
+    'validation' => [
+        'comment' => [
+            'required' => 'Поле коментаря є обов\'язковим.',
+            'min' => 'Поле :attribute повинно містити принаймні :min символів.',
+            'max' => 'Поле :attribute не повинно перевищувати :max символів.',
+        ],
+        'rating' => [
+            'required' => 'Рейтинг (за зірками) є обов\'язковим.',
+            'integer'  => ':attribute повинен бути цілим числом.',
+            'between' => ':attribute повинен бути в діапазоні від :min до :max.',
+        ],
+    ],
+    'guests_comments_label' => 'Дозволити гостям залишати відгуки',
+    'guests_comments_hint' => 'Дозволити гостям залишати рейтинги та коментарі',
+    'Manage' => 'Керувати',
+    'You cannot add reviews for your own listings.' => 'Ви не можете додавати відгуки до власних оголошень.',
+    'Your listing has no reviews yet.' => 'Ваше оголошення ще не має відгуків.',
+    'This listing has no reviews yet. Be the first to leave a review.' => 'У цьому оголошенні ще немає відгуків. Будьте першими, хто залишить відгук.',
+    'review_not_found' => 'Відгук не знайдено.',
+    'no_reviews_found' => 'Відгуків не знайдено.',
+    
+];

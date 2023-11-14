@@ -1,0 +1,48 @@
+<?php
+
+return [
+    'Reviews' => 'التقييمات',
+    'Review' => 'تقييم',
+    'Reviews system' => 'نظام التقييمات',
+    'Ratings' => 'التقييمات',
+    'Rating' => 'تقييم',
+    'count_reviews' => '{0} تقييم|{1} تقييم|[2,*] تقييمات',
+    'count_stars' => '{0} نجمة|{1} نجمة|[2,*] نجوم',
+    'count_ratings' => '{0} تقييم|{1} تقييم|[2,*] تقييمات',
+    'There were errors while submitting this review' => 'حدثت أخطاء أثناء تقديم هذا التقييم',
+    'review_posted' => 'تم نشر تقييمك!',
+    'Your review has been removed!' => 'تمت إزالة تقييمك!',
+    'Enter your review here...' => 'أدخل تقييمك هنا...',
+    'Leave a Review' => 'اترك تقييم',
+    'Anonymous' => 'مجهول',
+    'Delete' => 'حذف',
+    'Listing' => 'القائمة',
+    'Comments' => 'التعليقات',
+    'Comment' => 'تعليق',
+    'Approved' => 'موافق عليه',
+    'Spam' => 'سخام',
+    'User' => 'مستخدم',
+    'Note' => 'ملاحظة',
+    'You must be logged in to post a review.' => 'يجب أن تكون مسجل الدخول لنشر تقييم.',
+    'validation' => [
+        'comment' => [
+            'required' => 'حقل التعليق مطلوب.',
+            'min' => 'يجب أن يكون :attribute على الأقل :min أحرفًا.',
+            'max' => 'قد لا يكون :attribute أكبر من :max أحرفًا.',
+        ],
+        'rating' => [
+            'required' => 'التقييم (بالنجوم) مطلوب.',
+            'integer'  => 'يجب أن يكون :attribute عبارة عن عدد صحيح.',
+            'between' => 'يجب أن يكون :attribute بين :min و :max.',
+        ],
+    ],
+    'guests_comments_label' => 'السماح للزوار بنشر التقييمات',
+    'guests_comments_hint' => 'السماح للزوار بنشر التقييمات والتعليقات',
+    'Manage' => 'إدارة',
+    'You cannot add reviews for your own listings.' => 'لا يمكنك إضافة تقييمات لقوائمك الخاصة.',
+    'Your listing has no reviews yet.' => 'قائمتك ليست لديها تقييمات بعد.',
+    'This listing has no reviews yet. Be the first to leave a review.' => 'هذه القائمة ليست لديها تقييمات بعد. كن أول من يترك تقييمًا.',
+    'review_not_found' => 'التقييم غير موجود.',
+    'no_reviews_found' => 'لم يتم العثور على تقييمات.',
+    
+];

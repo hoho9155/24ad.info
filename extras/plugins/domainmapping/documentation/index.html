@@ -1,0 +1,248 @@
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Domain Mapping Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style>
+		body {
+			font-family: Lato,Helvetica Neue,Helvetica,Arial,sans-serif;
+			color: #333;
+		}
+		.container {
+			font-size: 16px;
+			line-height: 27px;
+		}
+		p, ul {
+			font-weight: 400;
+		}
+		p, table, hr, .box {
+			margin-bottom:25px;
+		}
+		.box p {
+			margin-bottom:10px;
+		}
+		pre {
+			font-family: "Courier 10 Pitch", Courier, monospace;
+			font-size: 14px;
+			line-height: 140%;
+			white-space: pre;
+			white-space: pre-wrap;
+			white-space: -moz-pre-wrap;
+			white-space: -o-pre-wrap;
+			background: #FCFCFC;
+			border: 1px solid #E7E7E7;
+		}
+		code {
+			font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+			font-size: 13px;
+			line-height: 100%;
+			white-space: pre;
+			white-space: pre-wrap;
+			white-space: -moz-pre-wrap;
+			white-space: -o-pre-wrap;
+			background: #F0F2F1;
+			color: #F26562;
+			padding: 5px;
+		}
+		li {
+			line-height: 28px;
+		}
+		table {
+			font-family: arial, sans-serif;
+			border-collapse: collapse;
+			width: 100%;
+		}
+		
+		td, th {
+			border: 1px solid #dddddd;
+			text-align: left;
+			padding: 8px;
+		}
+		
+		tr:nth-child(even) {
+			background-color: #eeeeee;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">"Domain Mapping for LaraClassifier and JobClass" Documentation by BeDigit v5.0.1</h3>
+		
+		<hr>
+		
+		<h1 class="center">Domain Mapping for LaraClassifier and JobClass</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 18/06/2018<br>
+					By: BeDigit<br>
+					Support: <a href="https://support.bedigit.com/" target="_blank">Help Center</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->
+			
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via our ticket form form <a href="https://support.bedigit.com/help-center/tickets/new" target="_blank">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#features">Features</a></li>
+			<li><a href="#compatibility">Compatibility</a></li>
+			<li><a href="#installation">Installation</a></li>
+			<li><a href="#upgrade">Upgrade</a></li>
+			<li><a href="#usage">Usage</a></li>
+			<li><a href="#translation">Translation</a></li>
+			<li><a href="#uninstallation">Uninstallation</a></li>
+			<li><a href="#removingFiles">Removing Files</a></li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="features"><strong>A) Features</strong> - <a href="#toc">top</a></h3>
+		<ul>
+			<li>Customize URLs with Domain Mapping (by setting a subdomain (or domain) per country).</li>
+			<li>Allow you to use the core app with multiple subdomains or domains.</li>
+			<li>Optimize your website SEO per sub-domain (or per domain).</li>
+			<li>Share session between subdomains of the domain of the main URL (<code>APP_URL</code> from the /.env file).</li>
+		</ul>
+		<p>NOTE: This plugin doesn't support subdomains of subdomains. The plugin cannot also share session between to distinct domains (like foo.com and bar.com).</p>
+
+		<hr>
+		
+		<h3 id="compatibility"><strong>B) Compatibility</strong> - <a href="#toc">top</a></h3>
+		<ul>
+			<li>v5.0.1 => LaraClassifier v14.0.2+ and JobClass v13.0.2+</li>
+			<li>v5.0.0 => LaraClassifier (v14.0.0 to v14.0.1) and JobClass (13.0.0 to 13.0.1)</li>
+			<li>v4.3 => LaraClassifier v13.0.0 and JobClass v12.0.0</li>
+			<li>v4.2 => LaraClassifier (v12.1.0 to v12.2.4) and JobClass (v11.1.0 to v11.2.4)</li>
+			<li>v4.1 => LaraClassifier (v12.1.0 to v12.2.4) and JobClass (v11.1.0 to v11.2.4)</li>
+			<li>v4.0 => LaraClassifier (v12.0.0 to v12.0.2) and JobClass (v11.0.0 to v11.0.2)</li>
+			<li>v3.9 => LaraClassifier (v11.0.2 to v11.0.4) and JobClass (v10.0.2 to v10.0.4)</li>
+			<li>v3.8 => LaraClassifier (v11.0.0 to v11.0.1) and JobClass (v10.0.0 to v10.0.1)</li>
+			<li>v3.7 => LaraClassifier (v10.2.1 to v11.0.1) and JobClass (v9.2.1 to v10.0.1)</li>
+			<li>v3.6 => LaraClassifier (v10.2.0 to v10.2.6) and JobClass (v9.2.0 to v9.2.6)</li>
+			<li>v3.5 => LaraClassifier v10.1.4 and JobClass v9.1.5</li>
+			<li>v3.4 => LaraClassifier (v10.1.2 to v10.1.3) and JobClass (v9.1.3 to v9.1.4)</li>
+			<li>v3.3 => LaraClassifier (v10.1.0 to v10.1.1) and JobClass (v9.1.0 to v9.1.2)</li>
+			<li>v3.2 => LaraClassifier (v10.0.1 to v10.0.2) and JobClass (v9.0.1 to v9.0.3)</li>
+			<li>v3.1 => LaraClassifier v10.0.1 and JobClass v9.0.1</li>
+			<li>v3.0 => LaraClassifier v10.0.0 and JobClass v9.0.0</li>
+			<li>v2.9 => LaraClassifier v9.0.1 and JobClass v8.0.1</li>
+			<li>v2.8 => LaraClassifier v9.0.0 and JobClass v8.0.0</li>
+			<li>v2.7 => LaraClassifier (v8.0.0 to v8.0.6) and JobClass (v7.0.0 to v7.0.6)</li>
+			<li>v2.6 => LaraClassifier (v7.3.6 to v7.3.8) and JobClass (v6.1.6 to v6.1.8)</li>
+			<li>v2.5 => LaraClassifier (v7.3.2 to v7.3.5) and JobClass (v6.1.2 to v6.1.5)</li>
+			<li>v2.4 => LaraClassifier (v7.3.0 to v7.3.2) and JobClass (v6.1.0 to v6.1.2)</li>
+			<li>v2.3 => LaraClassifier (v7.2.3 to v7.2.4) and JobClass (v6.0.3 to v6.0.4)</li>
+			<li>v2.2 => LaraClassifier (v7.2.1 to v7.2.2) and JobClass (v6.0.1 to v6.0.2)</li>
+			<li>v2.1 => LaraClassifier v7.2.0 and JobClass v6.0.0</li>
+			<li>v2.0 => LaraClassifier (v7.1.0 to v7.1.1) and JobClass (v5.9.0 to v5.9.1)</li>
+			<li>v1.9 => LaraClassifier v7.0.4 and JobClass v5.8.4</li>
+			<li>v1.8 => LaraClassifier (v6.9 to v7.0.3) and JobClass (v5.7 to v5.8.3)</li>
+			<li>v1.7 => LaraClassifier v6.8 and JobClass v5.6</li>
+			<li>v1.6 => LaraClassifier (v6.6 to v6.7) and JobClass (v5.4 to v5.5)</li>
+			<li>v1.5 => LaraClassifier v6.5 and JobClass v5.3</li>
+			<li>v1.4 => LaraClassifier (v6.2 to v6.4) and JobClass (v5.0 to v5.2)</li>
+			<li>v1.3 => LaraClassifier (v5.9 to v6.1) and JobClass (v4.7 to v4.9)</li>
+			<li>v1.2 => LaraClassifier (v5.7 to v5.8) and JobClass (v4.5 to v4.6)</li>
+			<li>v1.1 => LaraClassifier (v5.2 to v5.6) and JobClass (v4.0 to v4.4)</li>
+			<li>v1.0 => LaraClassifier v5.1 and JobClass v3.9</li>
+		</ul>
+		
+		<hr>
+		
+		<h3 id="installation"><strong>C) Installation</strong> - <a href="#toc">top</a></h3>
+		<p>To install this plugin:</p>
+		
+		<ul>
+			<li>Unzip the plugin package</li>
+			<li>Rename the unziped directory to "<code>domainmapping</code>"</li>
+			<li>Move the "<code>domainmapping</code>" directory to the script's <code>/extras/plugins/</code> directory like this: <code>/extras/plugins/domainmapping/</code></li>
+			<li>Go to your Admin panel &rarr; Plugins (and click on "Install") to install it.<br>
+				You will need your Purchase Code that you can find by following <a href="https://help.market.envato.com/hc/en-us/articles/202822600-Where-Is-My-Purchase-Code-" target="_blank">this link</a>.</li>
+		</ul>
+		
+		<hr>
+		
+		<h3 id="upgrade"><strong>D) Upgrade</strong> - <a href="#toc">top</a></h3>
+		<ul>
+			<li>Replace all the plugin's files in the core app's <code>/extras/plugins/domainmapping/</code> directory.</li>
+			<li>And <a href="#installation">reinstall</a> the plugin (NOTE: You will lose the current plugin configuration).</li>
+		</ul>
+		
+		<hr>
+		
+		<h3 id="usage"><strong>E) Usage</strong> - <a href="#toc">top</a></h3>
+		<ul>
+			<li>To manage your website domains mapping, go to your website Admin panel &rarr; Domains.<br>
+				NOTE: You can add only one subdomain (or domain) per country. And before adding a domain (or sub-domain), make sure you have created a A (IPv4) or AAAA (IPv6) Records for the Domain Name, using the Client Panel (DNS Zones) of your domain provider.</li>
+			<li>Make sure you have added the domain (or subdomain) from the host control panel, and that you have created a domain aliases on the host control panel (or Cpanel) that points to your website root directory (<code>publuc_html</code> for example).</li>
+			<li>Go to your website Admin panel &rarr; Settings &rarr; Domain Mapping to enable/disable session sharing between sub-domains.</li>
+		</ul>
+		<p>INFO: An A Record, or AAAA Record, is used to point a hostname at an IP address. This record type can be used to point your domain name at your web host or for creating subdomains which point directly to an IP address.</p>
+		
+		<p><strong>Admin panel URL</strong></p>
+		<ul>
+			<li>If you have enabled the session sharing between subdomains, the Admin panel will be accessible through the global URL, automatically set in the /.env file followed by <code>/admin</code> (<code>APP_URL/admin</code>).</li>
+			<li>If you have disabled the session sharing, the Admin panel will be accessible for each domain or sub-domain (eg. us.domain.com/admin, fr.domain.com/admin, ...).</li>
+		</ul>
+		
+		<p><strong>Optional feature</strong></p>
+		<ul>
+			<li>This plugin allow you to set the countries list page as homepage. To do that you have to set the <code>DM_COUNTRIES_LIST_AS_HOMEPAGE=</code> variable in the
+				<code>/.env</code> file to <code>true</code>. If this variable doesn't exist in your <code>/.env</code> file you have to add it.<br>
+			NOTE: You have to set a domain (or subdomain) per country (eg. example.de, fr.example.com, ...) for all countries to let the main domain (the one available in the <code>APP_URL</code> variable of your <code>/.env</code> file, eg. example.com) to show the countries list page as homepage.</li>
+		</ul>
+		
+		<hr>
+		
+		<h3 id="translation"><strong>F) Translation</strong> - <a href="#toc">top</a></h3>
+		<p>To translate this plugin into your language:</p>
+		<ul>
+			<li>Go to the plugin languages directory in the core app's <code>/extras/plugins/domainmapping/lang/</code></li>
+			<li>Duplicate the folder <code>/extras/plugins/domainmapping/lang/en/</code> to <code>/extras/plugins/domainmapping/lang/&lt;abbr&gt;/</code>
+				<br>NOTE: Don't forget replace <code>&lt;abbr&gt;</code> by your language code (e.g. "de" for German language).</li>
+			<li>Open the file <code>/extras/plugins/domainmapping/lang/&lt;abbr&gt;/messages.php</code> and translate it.
+				<br>NOTE: To translate the file, you must change the values and not the keys of PHP array.</li>
+		</ul>
+		
+		<hr>
+		
+		<h3 id="uninstallation"><strong>G) Uninstallation</strong> - <a href="#toc">top</a></h3>
+		<p>To uninstall this plugin</p>
+		<ul>
+			<li>Go to your website Admin panel &rarr; Plugins (and click on "Uninstall") to uninstall it.</li>
+		</ul>
+		
+		<hr>
+		
+		<h3 id="removingFiles"><strong>H) Removing the plugin</strong> - <a href="#toc">top</a></h3>
+		<p>To remove this plugin:</p>
+		<ul>
+			<li><a href="#uninstallation">Uninstall it</a></li>
+			<li>Go to the core app's <code>/extras/plugins/</code> directory and remove the <code>domainmapping/</code> directory (with its content).</li>
+		</ul>
+		
+		<hr>
+		
+		<p>Once again, thank you so much for purchasing this theme. As we said at the beginning, we'd be glad to help you if you have any questions relating to this item. No guarantees, but we will do our best to assist. If you have a more general question relating to the items on CodeCanyon, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p>
+		
+		<p class="append-bottom alt large"><strong>BeDigit</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>

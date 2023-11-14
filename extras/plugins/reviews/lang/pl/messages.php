@@ -1,0 +1,48 @@
+<?php
+
+return [
+    'Reviews' => 'Recenzje',
+    'Review' => 'Recenzja',
+    'Reviews system' => 'System recenzji',
+    'Ratings' => 'Oceny',
+    'Rating' => 'Ocena',
+    'count_reviews' => '{0} recenzja|{1} recenzja|[2,*] recenzje',
+    'count_stars' => '{0} gwiazdka|{1} gwiazdka|[2,*] gwiazdki',
+    'count_ratings' => '{0} ocena|{1} ocena|[2,*] oceny',
+    'There were errors while submitting this review' => 'Wystąpiły błędy podczas przesyłania recenzji',
+    'review_posted' => 'Twoja recenzja została opublikowana!',
+    'Your review has been removed!' => 'Twoja recenzja została usunięta!',
+    'Enter your review here...' => 'Wprowadź swoją recenzję tutaj...',
+    'Leave a Review' => 'Zostaw recenzję',
+    'Anonymous' => 'Anonimowy',
+    'Delete' => 'Usuń',
+    'Listing' => 'Ogłoszenie',
+    'Comments' => 'Komentarze',
+    'Comment' => 'Komentarz',
+    'Approved' => 'Zatwierdzone',
+    'Spam' => 'Spam',
+    'User' => 'Użytkownik',
+    'Note' => 'Uwaga',
+    'You must be logged in to post a review.' => 'Musisz być zalogowany, aby dodać recenzję.',
+    'validation' => [
+        'comment' => [
+            'required' => 'Pole komentarza jest wymagane.',
+            'min' => ':attribute musi mieć co najmniej :min znaków.',
+            'max' => ':attribute nie może mieć więcej niż :max znaków.',
+        ],
+        'rating' => [
+            'required' => 'Ocena (liczba gwiazdek) jest wymagana.',
+            'integer'  => ':attribute musi być liczbą całkowitą.',
+            'between' => ':attribute musi być między :min a :max.',
+        ],
+    ],
+    'guests_comments_label' => 'Pozwól gościom dodawać recenzje',
+    'guests_comments_hint' => 'Pozwól gościom dodawać oceny i komentarze',
+    'Manage' => 'Zarządzaj',
+    'You cannot add reviews for your own listings.' => 'Nie możesz dodawać recenzji do własnych ogłoszeń.',
+    'Your listing has no reviews yet.' => 'Twoje ogłoszenie nie ma jeszcze recenzji.',
+    'This listing has no reviews yet. Be the first to leave a review.' => 'To ogłoszenie nie ma jeszcze recenzji. Bądź pierwszy, który zostawi recenzję.',
+    'review_not_found' => 'Recenzja nie została znaleziona.',
+    'no_reviews_found' => 'Brak recenzji.',
+    
+];

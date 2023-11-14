@@ -1,0 +1,10 @@
+{
+    "name": "currencyexchange",
+    "version": "4.0.1",
+    "display_name": "Currency Exchange",
+    "description": "Currency Exchange Plugin",
+    "author": "Bedigit",
+    "category": "tool",
+    "has_installer": true,
+    "item_id": "22079713"
+}

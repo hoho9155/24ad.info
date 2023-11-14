@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>2Checkout Documentation</title>
+	<style>
+		body {
+			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+			background-color: #f0f0f0;
+		}
+		
+		hr {
+			border-top: 1px solid #8c8b8b;
+		}
+		
+		#content {
+			background-color: #ffffff;
+			margin-left: auto;
+			margin-right: auto;
+			width: 900px;
+			padding: 20px;
+		}
+		
+		pre {
+			font-family: "Courier 10 Pitch", Courier, monospace;
+			font-size: 14px;
+			line-height: 140%;
+			white-space: pre;
+			white-space: pre-wrap;
+			white-space: -moz-pre-wrap;
+			white-space: -o-pre-wrap;
+		}
+		
+		code {
+			font-family: Menlo,Monaco,Consolas,Courier New,monospace;
+			font-size: 90%;
+			color: #f4645f;
+			background-color: #f0f2f1;
+			text-shadow: 0 1px #fff;
+			padding: 2px 4px;
+			border-radius: 4px;
+		}
+		
+		li {
+			line-height: 140%;
+		}
+	</style>
+</head>
+
+<body>
+<div id="content">
+	<h2>DOCUMENTATION</h2>
+	<hr>
+	<br>
+	2Checkout (v3.0.0) plugin for <a href="https://1.envato.market/30rEB" target="_blank">LaraClassifier</a> and <a
+		href="https://1.envato.market/Ld3mZ" target="_blank">JobClass</a>.
+	
+	<h3>Installation</h3>
+	To install this plugin:
+	
+	<ul>
+		<li>Copy the plugin's (uncompressed) folder into the script's plugins folder like this: <code>/extras/plugins/twocheckout/</code></li>
+		<li>Go to your Admin panel &rarr; Plugins (and click on "Install") to install it.</li>
+	</ul>
+	
+	<h3>Compatibility</h3>
+	<ul>
+		<li>v3.0.0 => LaraClassifier v14.0.0+ and JobClass v13.0.0+</li>
+		<li>v2.9 => LaraClassifier (v11.0.2 to v13.0.0) and JobClass (v10.0.2 to v12.0.0)</li>
+		<li>v2.8 => LaraClassifier (v11.0.0 to v11.0.1) and JobClass (v10.0.0 to v10.0.1)</li>
+		<li>v2.7 => LaraClassifier (v10.2.0 to v11.0.0) and JobClass (v9.2.0 to v10.0.0)</li>
+		<li>v2.6 => LaraClassifier v10.2.0 and JobClass v9.2.0</li>
+		<li>v2.5 => LaraClassifier (v10.1.2 to v10.1.4) and JobClass (v9.1.3 to v9.1.5)</li>
+		<li>v2.4 => LaraClassifier (v9.0.1 to v10.1.1) and JobClass (v8.0.1 to v9.1.2)</li>
+		<li>v2.3 => LaraClassifier (v9.0.0 to v9.0.1) and JobClass (v8.0.0 to v8.0.1)</li>
+		<li>v2.2 => LaraClassifier (v8.0.2 to v8.0.6) and JobClass (v7.0.2 to v7.0.6)</li>
+		<li>v2.1 => LaraClassifier (v8.0.0 to v8.0.1) and JobClass (v7.0.0 to v7.0.1)</li>
+		<li>v2.0 => LaraClassifier (v7.3.3 to v7.3.8) and JobClass (v6.1.3 to v6.1.8)</li>
+		<li>v1.8 => LaraClassifier (v7.1.0 to v7.3.2) and JobClass (v5.9.0 to v6.1.2)</li>
+		<li>v1.7 => LaraClassifier (v6.6 to v7.0.x) and JobClass (v5.4 to v5.8.x)</li>
+		<li>v1.6 => LaraClassifier (v5.7 to v6.5) and JobClass (v4.5 to v5.3)</li>
+		<li>v1.5 => LaraClassifier (v5.2 to v5.6) and JobClass (v4.0 to v4.4)</li>
+		<li>v1.4 => LaraClassifier v5.1 and JobClass v3.9</li>
+		<li>v1.3 => LaraClassifier (v4.9 to v5.0) and JobClass (v3.7 to v3.8)</li>
+		<li>v1.1 to v1.2 => LaraClassifier (v3.1 to v4.8) and JobClass (v2.0 to v3.6)</li>
+		<li>v1.0 => LaraClassifier v3.0 and JobClass v1.9</li>
+	</ul>
+	
+	<h3>Update</h3>
+	Replace all the plugin's files on your server.
+	
+	<h3>Configuration</h3>
+	Add the settings below in the script's <code>/.env</code> file on your server:
+	
+	<pre>
+TWOCHECKOUT_PUBLISHABLE_KEY=
+TWOCHECKOUT_PRIVATE_KEY=
+TWOCHECKOUT_SELLER_ID=
+TWOCHECKOUT_SECRET_WORD=
+TWOCHECKOUT_DEMO=false
+    </pre>
+	
+	Example of use:
+	
+	<pre>
+TWOCHECKOUT_PUBLISHABLE_KEY=your-2checkout-publishable-key
+TWOCHECKOUT_PRIVATE_KEY=your-2checkout-private-key
+TWOCHECKOUT_SELLER_ID=your-2checkout-seller-id
+TWOCHECKOUT_SECRET_WORD=your-2checkout-secret-word
+TWOCHECKOUT_DEMO=true
+    </pre>
+	
+	<p>NOTE:</p>
+	<ul>
+		<li>Integration modes supported: <code>redirect</code> and <code>authorize</code>.</li>
+		<li>To select an integration mode you have to use the variable <code>TWOCHECKOUT_INTEGRATION=</code> in the <code>/.env</code> file like this: <code>TWOCHECKOUT_INTEGRATION=authorize</code>.</li>
+		<li>Without adding the <code>TWOCHECKOUT_INTEGRATION=</code> variable in the <code>/.env</code>, the default integration is <code>redirect</code>.</li>
+		<li>To place a test order with 2Checkout's legacy Payment API, just add the demo variable <code>TWOCHECKOUT_DEMO=</code> with a value of <code>true</code> like this <code>
+	TWOCHECKOUT_DEMO=true</code>. Important: In the latest version of the 2checkout.com API, demo mode need to be set on the seller dashboard.</li>
+	</ul>
+	
+	<h3>Translation</h3>
+	To translate this plugin into your language:
+	
+	<ul>
+		<li>Go to the languages folder at <code>/extras/plugins/twocheckout/lang/</code></li>
+		<li>Duplicate the folder <code>/extras/plugins/twocheckout/lang/en/</code> to <code>/extras/plugins/twocheckout/lang/&lt;abbr&gt;/</code>
+			NOTE: Don't forget replace <code>&lt;abbr&gt;</code> by your language code (e.g. "de" for German language).
+		</li>
+		<li>Open the file <code>/extras/plugins/twocheckout/lang/&lt;abbr&gt;/messages.php</code> and translate it
+			NOTE: To translate the file, you must change the values and not the keys of PHP array.
+		</li>
+	</ul>
+	
+	<h3>Uninstallation</h3>
+	To uninstall this plugin, go to your Admin panel &rarr; Plugins (and click on "Uninstall") to uninstall it.
+	
+	<h3>Removing</h3>
+	To remove this plugin:
+	
+	<ul>
+		<li>Uninstall it</li>
+		<li>Go in the folder <code>/extras/plugins/</code> and remove the folder <code>twocheckout/</code>.</li>
+	</ul>
+	
+	<h3>Resources</h3>
+	<ul>
+		<li><a href="https://verifone.cloud/docs/2checkout/API-Integration/01Start-using-the-2Checkout-API" target="_blank">Start using the 2Checkout API</a></li>
+		<li><a href="https://verifone.cloud/docs/2checkout/API-Integration/Transition_guides/Transition_Guide_for_2CO_Sandbox" target="_blank">Transition Guide for 2CO Sandbox</a></li>
+		<li><a href="https://github.com/2Checkout/2checkout-php" target="_blank">2Checkout PHP Library</a></li>
+		<li><a href="https://github.com/2Checkout/2checkout-php/wiki/Charge_Authorize" target="_blank">Charge_Authorize</a></li>
+		<li><a href="https://github.com/2Checkout/2checkout-php/wiki/Charge_Direct" target="_blank">Charge_Direct</a></li>
+		<li><a href="https://verifone.cloud/docs/2checkout/Documentation/09Test_ordering_system/01Test_payment_methods" target="_blank">Test payment methods</a></li>
+	</ul>
+</div>
+</body>
+
+</html>

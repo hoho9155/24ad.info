@@ -1,0 +1,11 @@
+SET FOREIGN_KEY_CHECKS=0;
+
+DROP TABLE IF EXISTS `__PREFIX__domains`;
+
+DROP TABLE IF EXISTS `__PREFIX__domain_settings`;
+
+DROP TABLE IF EXISTS `__PREFIX__domain_meta_tags`;
+
+DROP TABLE IF EXISTS `__PREFIX__domain_home_sections`;
+
+SET FOREIGN_KEY_CHECKS=1;

@@ -1,0 +1,48 @@
+<?php
+
+return [
+    'Reviews' => 'รีวิว',
+    'Review' => 'รีวิว',
+    'Reviews system' => 'ระบบรีวิว',
+    'Ratings' => 'คะแนน',
+    'Rating' => 'คะแนน',
+    'count_reviews' => '{0} รีวิว|{1} รีวิว|[2,*] รีวิว',
+    'count_stars' => '{0} ดาว|{1} ดาว|[2,*] ดาว',
+    'count_ratings' => '{0} คะแนน|{1} คะแนน|[2,*] คะแนน',
+    'There were errors while submitting this review' => 'เกิดข้อผิดพลาดขณะส่งรีวิวนี้',
+    'review_posted' => 'รีวิวของคุณได้ถูกโพสต์แล้ว!',
+    'Your review has been removed!' => 'รีวิวของคุณได้ถูกลบแล้ว!',
+    'Enter your review here...' => 'กรอกความคิดเห็นของคุณที่นี่...',
+    'Leave a Review' => 'แสดงความคิดเห็น',
+    'Anonymous' => 'ไม่ระบุชื่อ',
+    'Delete' => 'ลบ',
+    'Listing' => 'รายการ',
+    'Comments' => 'ความคิดเห็น',
+    'Comment' => 'ความคิดเห็น',
+    'Approved' => 'อนุมัติ',
+    'Spam' => 'สแปม',
+    'User' => 'ผู้ใช้',
+    'Note' => 'บันทึก',
+    'You must be logged in to post a review.' => 'คุณต้องเข้าสู่ระบบเพื่อโพสต์รีวิว',
+    'validation' => [
+        'comment' => [
+            'required' => 'กรุณากรอกข้อมูลในช่องความคิดเห็น',
+            'min' => ':attribute ต้องมีอย่างน้อย :min ตัวอักษร',
+            'max' => ':attribute ต้องมีไม่เกิน :max ตัวอักษร',
+        ],
+        'rating' => [
+            'required' => 'กรุณาให้คะแนนด้วยดาว',
+            'integer'  => ':attribute ต้องเป็นจำนวนเต็ม',
+            'between' => ':attribute ต้องอยู่ระหว่าง :min และ :max',
+        ],
+    ],
+    'guests_comments_label' => 'อนุญาตให้แขกโพสต์รีวิว',
+    'guests_comments_hint' => 'อนุญาตให้ผู้ใช้แขกโพสต์คะแนนและความคิดเห็น',
+    'Manage' => 'จัดการ',
+    'You cannot add reviews for your own listings.' => 'คุณไม่สามารถเพิ่มรีวิวสำหรับรายการของคุณเองได้',
+    'Your listing has no reviews yet.' => 'รายการของคุณยังไม่มีรีวิว',
+    'This listing has no reviews yet. Be the first to leave a review.' => 'รายการนี้ยังไม่มีรีวิว ให้เป็นคนแรกที่โพสต์รีวิว',
+    'review_not_found' => 'ไม่พบรีวิว',
+    'no_reviews_found' => 'ไม่พบรีวิว',
+    
+];

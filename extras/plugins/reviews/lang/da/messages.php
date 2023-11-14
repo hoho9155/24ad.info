@@ -1,0 +1,48 @@
+<?php
+
+return [
+    'Reviews' => 'Anmeldelser',
+    'Review' => 'Anmeldelse',
+    'Reviews system' => 'Anmeldelsessystem',
+    'Ratings' => 'Bedømmelser',
+    'Rating' => 'Bedømmelse',
+    'count_reviews' => '{0} anmeldelse|{1} anmeldelse|[2,*] anmeldelser',
+    'count_stars' => '{0} stjerne|{1} stjerne|[2,*] stjerner',
+    'count_ratings' => '{0} bedømmelse|{1} bedømmelse|[2,*] bedømmelser',
+    'There were errors while submitting this review' => 'Der opstod fejl under indsendelse af denne anmeldelse',
+    'review_posted' => 'Din anmeldelse er blevet indsendt!',
+    'Your review has been removed!' => 'Din anmeldelse er blevet fjernet!',
+    'Enter your review here...' => 'Indtast din anmeldelse her...',
+    'Leave a Review' => 'Skriv en anmeldelse',
+    'Anonymous' => 'Anonym',
+    'Delete' => 'Slet',
+    'Listing' => 'Liste',
+    'Comments' => 'Kommentarer',
+    'Comment' => 'Kommentar',
+    'Approved' => 'Godkendt',
+    'Spam' => 'Spam',
+    'User' => 'Bruger',
+    'Note' => 'Bemærkning',
+    'You must be logged in to post a review.' => 'Du skal være logget ind for at indsende en anmeldelse.',
+    'validation' => [
+        'comment' => [
+            'required' => 'Kommentarfeltet er påkrævet.',
+            'min' => ':attribute skal være mindst :min tegn.',
+            'max' => ':attribute må ikke være længere end :max tegn.',
+        ],
+        'rating' => [
+            'required' => 'Vurderingen (ved stjerner) er påkrævet.',
+            'integer'  => ':attribute skal være et helt tal.',
+            'between' => ':attribute skal være mellem :min og :max.',
+        ],
+    ],
+    'guests_comments_label' => 'Tillad gæster at indsende anmeldelser',
+    'guests_comments_hint' => 'Tillad gæstebesøgende at indsende bedømmelser og kommentarer',
+    'Manage' => 'Administrer',
+    'You cannot add reviews for your own listings.' => 'Du kan ikke tilføje anmeldelser til dine egne opslag.',
+    'Your listing has no reviews yet.' => 'Din liste har endnu ingen anmeldelser.',
+    'This listing has no reviews yet. Be the first to leave a review.' => 'Denne liste har endnu ingen anmeldelser. Vær den første til at skrive en anmeldelse.',
+    'review_not_found' => 'Anmeldelse ikke fundet.',
+    'no_reviews_found' => 'Ingen anmeldelser fundet.',
+     
+];
