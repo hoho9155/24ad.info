@@ -190,13 +190,14 @@ trait CategoryTrait
 				FROM ' . DBTool::table($categoriesTable) . ' AS node,
 						' . DBTool::table($categoriesTable) . ' AS parent,
 						' . DBTool::table($postsTable) . ' AS tPost
-				WHERE node.lft BETWEEN parent.lft AND parent.rgt
+				WHERE node.lft BETWEEN parent.lft AND parent.rgt-1
 						AND node.id = tPost.category_id
 						AND tPost.country_code = :countryCode' . $whereCity . '
 						AND ((tPost.email_verified_at IS NOT NULL) AND (tPost.phone_verified_at IS NOT NULL))
 						AND (tPost.archived_at IS NULL)
 						AND (tPost.deleted_at IS NULL)
 				GROUP BY parent.id';
+
 		$bindings = [
 			'countryCode' => config('country.code'),
 		];

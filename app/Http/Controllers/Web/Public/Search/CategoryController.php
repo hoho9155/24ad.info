@@ -91,7 +91,7 @@ class CategoryController extends BaseController
 			&& currentRouteActionContains('Search\\')
 			&& empty(data_get($apiResult, 'data'))
 		);
-		
+
 		return appView(
 			'search.results',
 			compact(

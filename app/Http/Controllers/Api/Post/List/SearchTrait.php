@@ -64,10 +64,10 @@ trait SearchTrait
 			'perPage' => request()->query('perPage'),
 			'orderBy' => $orderBy,
 		];
-		
+
 		$searchData = $this->searchPosts($input, $preSearch, $fields);
 		$preSearch = $searchData['preSearch'] ?? $preSearch;
-		
+
 		$data = [
 			'success' => true,
 			'message' => $searchData['message'] ?? null,

@@ -109,7 +109,7 @@ trait SubmitTrait
 		
 		// Get Listing Resource
 		$post = data_get($data, 'result');
-		
+
 		abort_if(empty($post), 404, t('post_not_found'));
 		
 		// Get the next URL

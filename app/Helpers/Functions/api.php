@@ -32,6 +32,7 @@ function isFromApi(): bool
 	
 	if (
 		request()->segment(1) == 'api'
+		|| strpos(currentRouteAction(), 'Controllers\Api') !== false
 		|| (request()->hasHeader('X-API-CALLED') && request()->header('X-API-CALLED'))
 	) {
 		$isFromApi = true;
@@ -90,7 +91,7 @@ function makeApiRequest(
 		 * i.e.The endpoint is a valid URL starting with 'http', except the website's URL
 		 */
 		$isRemoteEndpoint = (str_starts_with($uri, 'http') && !str_starts_with($uri, url('/')));
-		
+
 		if (!$isRemoteEndpoint) {
 			$createMethods = ['POST', 'CREATE'];
 			$updateMethods = ['PUT', 'PATCH', 'UPDATE'];
