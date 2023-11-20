@@ -32,7 +32,6 @@ function isFromApi(): bool
 	
 	if (
 		request()->segment(1) == 'api'
-		|| strpos(currentRouteAction(), 'Controllers\Api') !== false
 		|| (request()->hasHeader('X-API-CALLED') && request()->header('X-API-CALLED'))
 	) {
 		$isFromApi = true;

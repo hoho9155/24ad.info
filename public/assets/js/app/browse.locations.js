@@ -42,6 +42,14 @@ $(document).ready(function () {
 		
 		return false;
 	});
+	$(document).on('input', '#modalQuery', function (e) {
+		e.preventDefault(); 
+		
+		let params = getLocationsBrowsingParameters(countryCode, this);
+		browseLocations(params);
+		
+		return false;
+	});
 	$(document).on('click', '#browseLocations .is-admin, #browseLocations .page-link', function (e) {
 		e.preventDefault();
 		

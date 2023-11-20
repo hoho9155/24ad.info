@@ -64,7 +64,7 @@ class PostReviewed extends Notification implements ShouldQueue
 		
 		// Get the notification channel
 		$channels = [];
-		
+
 		if ($emailNotificationCanBeSent) {
 			$channels[] = 'mail';
 		}
@@ -84,7 +84,7 @@ class PostReviewed extends Notification implements ShouldQueue
 	public function toMail($notifiable)
 	{
 		$postUrl = UrlGen::post($this->post);
-		
+
 		return (new MailMessage)
 			->subject(trans('mail.post_reviewed_title', ['title' => str($this->post->title)->limit(50)]))
 			->greeting(trans('mail.post_reviewed_content_1'))

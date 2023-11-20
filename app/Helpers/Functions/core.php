@@ -2266,12 +2266,16 @@ function getRequestPackageType(): ?string
 {
 	$isPromoting = isFromApi()
 		? str_contains(currentRouteAction(), '\Api\PostController')
-		: str_contains(currentRouteAction(), '\Web\Public\Post');
+		: (
+			str_contains(currentRouteAction(), '\Api\PostController')
+			|| str_contains(currentRouteAction(), '\Web\Public\Post')
+		);
 	
 	$isSubscripting = isFromApi()
 		? str_contains(currentRouteAction(), '\Api\UserController')
 		: (
-			str_contains(currentRouteAction(), '\Web\Public\Auth')
+			str_contains(currentRouteAction(), '\Api\UserController')
+			|| str_contains(currentRouteAction(), '\Web\Public\Auth')
 			|| str_contains(currentRouteAction(), '\Web\Public\Account')
 		);
 	
