@@ -1047,10 +1047,5 @@ return [
 	'active_package_exists' => 'You have already an active package.',
 	'unintentional_logout' => 'Unauthenticated or token expired. Please (re-)login.',
 
-
-
-
-
-
-
+    'sitemap_desc' => 'The Bikroy site is organised into several sections, as shown below. The sections are broken down by category and there is also a general section where you will find pages with useful information.',
 ];

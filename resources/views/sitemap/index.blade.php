@@ -43,19 +43,20 @@
 					
 					@includeFirst([config('larapen.core.customizedViewPath') . 'home.inc.spacer', 'home.inc.spacer'])
 					<h1 class="text-center title-1"><strong>{{ t('sitemap') }}</strong></h1>
-					<hr class="center-block small mt-0">
+					<!--<hr class="center-block small mt-0">-->
+					<div class="text-center px-3 py-3">{{ t('sitemap_desc') }}</div>
 					
 					<div class="col-12">
 						<div class="content-box">
 							<div class="row row-featured-category">
-								<div class="col-12 box-title">
+								<div class="col-12 box-title text-center">
 									<h2 class="px-3">
 										<span class="title-3 fw-bold">{{ t('list_of_categories_and_sub_categories') }}</span>
 									</h2>
 								</div>
 								
 								<div class="col-12">
-									<div class="list-categories-children styled">
+									<div class="list-categories-children styled" style="background: #F5F7FA; padding: 10px 30px;">
 										<div class="row">
 											@foreach ($cats as $key => $col)
 												<div class="col-md-4 col-sm-4{{ (count($cats) == $key+1) ? ' last-column' : '' }}">
@@ -65,10 +66,10 @@
 															$randomId = '-' . substr(uniqid(rand(), true), 5, 5);
 														?>
 														
-														<div class="cat-list">
-															<h3 class="cat-title rounded">
-																<a href="{{ \App\Helpers\UrlGen::category($iCat) }}">
-																	<i class="{{ $iCat->icon_class ?? 'icon-ok' }}"></i>
+														<div class="cat-list" style="background: #FFFFFF; margin-bottom: 20px; border-radius: .5rem;"> 
+															<h3 class="cat-title rounded" style="background: #00AAFF; border-radius: .5rem .5rem 0 0!important;">
+																<a href="{{ \App\Helpers\UrlGen::category($iCat) }}" style="color: #FFFFFF;">
+																	<i class="{{ $iCat->icon_class ?? 'icon-ok' }}" style="padding-right: 10px;"></i>
 																	{{ $iCat->name }} <span class="count"></span>
 																</a>
 																@if (isset($subCats) && $subCats->has($iCat->id))
