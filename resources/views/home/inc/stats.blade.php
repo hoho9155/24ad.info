@@ -103,11 +103,13 @@
 	@parent
 	@if (!isset($disableCounterUp) || !$disableCounterUp)
 		<script>
-			const counterUp = window.counterUp.default;
-			const counterEl = document.querySelector('.counter');
-			counterUp(counterEl, {
-				duration: {{ $counterUpTime }},
-				delay: {{ $counterUpDelay }}
+		    const counterUp = window.counterUp.default;
+			const counterEls = document.getElementsByClassName('counter');
+			Array.from(counterEls).forEach(el => {
+			    counterUp(el, {
+    				duration: {{ $counterUpTime }},
+    				delay: {{ $counterUpDelay }}
+    			});
 			});
 		</script>
 	@endif

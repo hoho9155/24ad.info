@@ -34,7 +34,11 @@
 						<a href="{{ \App\Helpers\UrlGen::category($cat, null, $city ?? null) }}" title="{{ data_get($cat, 'name') }}">
 							<span class="title fw-bold">
 								@if (in_array(config('settings.list.show_category_icon'), [4, 5, 6, 8]))
-									<i class="{{ data_get($cat, 'icon_class') ?? 'fas fa-folder' }}"></i>
+									@if (data_get($cat, 'icon_class') == 'empty')
+        						        <img src="{{ imgUrl(data_get($cat, 'picture'), 'logo') }}" style="height: 14px; padding-right: 4px;" />
+        						    @else
+        							    <i class="{{ data_get($cat, 'icon_class') ?? 'fas fa-folder' }}"></i>
+        							@endif
 								@endif
 								{{ data_get($cat, 'name') }}
 							</span>
@@ -47,7 +51,11 @@
 								<li>
 									<a href="{{ \App\Helpers\UrlGen::category($iSubCat, null, $city ?? null) }}" title="{{ data_get($iSubCat, 'name') }}">
 										@if (in_array(config('settings.list.show_category_icon'), [4, 5, 6, 8]))
-											<i class="{{ data_get($iSubCat, 'icon_class') ?? 'fas fa-folder' }}"></i>
+											@if (data_get($iSubCat, 'icon_class') == 'empty')
+                						        <img src="{{ imgUrl(data_get($iSubCat, 'picture'), 'logo') }}" style="height: 14px; padding-right: 4px;" />
+                						    @else
+                							    <i class="{{ data_get($iSubCat, 'icon_class') ?? 'fas fa-folder' }}"></i>
+                							@endif
 										@endif
 										{{ str(data_get($iSubCat, 'name'))->limit(100) }}
 										@if (config('settings.list.count_categories_listings'))
