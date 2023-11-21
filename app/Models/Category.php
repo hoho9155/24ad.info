@@ -45,7 +45,7 @@ class Category extends BaseModel
 	 * @var string
 	 */
 	// protected $primaryKey = 'id';
-	protected $appends = ['picture_url'];
+	protected $appends = ['picture_url', 'big_picture_url'];
 	
 	/**
 	 * Indicates if the model should be timestamped.
@@ -276,6 +276,15 @@ class Category extends BaseModel
 		return Attribute::make(
 			get: function ($value) {
 				return imgUrl($this->picture, 'cat');
+			},
+		);
+	}
+	
+	protected function bigPictureUrl(): Attribute
+	{
+		return Attribute::make(
+			get: function ($value) {
+				return imgUrl($this->picture, 'big');
 			},
 		);
 	}

@@ -30,9 +30,9 @@ $maxSubCats = (int)data_get($sectionOptions, 'max_sub_cats');
 				
 				@if (!empty($categories))
 					@foreach($categories as $key => $cat)
-						<div class="col-lg-2 col-md-3 col-sm-4 col-6 f-category">
+						<div class="col-lg-3 col-md-3 col-sm-4 col-6 f-category">
 							<a href="{{ \App\Helpers\UrlGen::category($cat) }}">
-								<img src="{{ data_get($cat, 'picture_url') }}" class="lazyload img-fluid" alt="{{ data_get($cat, 'name') }}">
+								<img src="{{ data_get($cat, 'big_picture_url') }}" class="lazyload img-fluid" style="height: 100%; padding: 0px 15px;" alt="{{ data_get($cat, 'name') }}">
 								<h6>
 									{{ data_get($cat, 'name') }}
 									@if (config('settings.list.count_categories_listings'))

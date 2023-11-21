@@ -103,7 +103,7 @@ class HomeSectionController extends BaseController
 				}
 			}
 		}
-		
+
 		$resourceCollection = new EntityCollection(class_basename($this), $homeSections);
 		
 		return apiResponse()->withCollection($resourceCollection);

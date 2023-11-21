@@ -2088,4 +2088,6 @@ WARNING: Before changing this option, it is important to note that restrictions 
 	'hide_category_hint_note' => 'Note: By hiding the category, the price of the listings belong <code>not-salable</code> categories will display <code>:defaultValue</code> instead of nothing.',
 	'hide_location_label' => 'Hide the location',
 	'hide_location_hint' => 'This option will hide location on the listings list page and on the homepage.',
+	
+	'custom_icon' => 'Custom Icon',
 ];

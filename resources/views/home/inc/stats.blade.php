@@ -6,6 +6,9 @@
 	$iconPosts = $sectionOptions['icon_count_listings'] ?? 'fas fa-bullhorn';
 	$iconUsers = $sectionOptions['icon_count_users'] ?? 'fas fa-users';
 	$iconLocations = $sectionOptions['icon_count_locations'] ?? 'far fa-map';
+	$customIconPosts = $sectionOptions['custom_icon_count_listings'] ?? null;
+	$customIconUsers = $sectionOptions['custom_icon_count_users'] ?? null;
+	$customIconLocations = $sectionOptions['custom_icon_count_locations'] ?? null;
 	$prefixPosts = $sectionOptions['prefix_count_listings'] ?? '';
 	$suffixPosts = $sectionOptions['suffix_count_listings'] ?? '';
 	$prefixUsers = $sectionOptions['prefix_count_users'] ?? '';
@@ -21,7 +24,7 @@
 @includeFirst([config('larapen.core.customizedViewPath') . 'home.inc.spacer', 'home.inc.spacer'], ['hideOnMobile' => $hideOnMobile])
 
 <div class="container{{ $hideOnMobile }}">
-	<div class="page-info page-info-lite rounded">
+	<div class="page-info page-info-lite rounded" style="background: #002233;">
 		<div class="text-center section-promo">
 			<div class="row">
 				
@@ -29,7 +32,11 @@
 					<div class="iconbox-wrap">
 						<div class="iconbox">
 							<div class="iconbox-wrap-icon">
-								<i class="{{ $iconPosts }}"></i>
+							    @if (empty($customIconPosts))
+							        <i class="{{ $iconPosts }}"></i>
+							    @else
+                                    <img src="{{ imgUrl($customIconPosts, 'logo') }}" style="height: 60px;" />
+								@endif
 							</div>
 							<div class="iconbox-wrap-content">
 								<h5>
@@ -47,7 +54,11 @@
 					<div class="iconbox-wrap">
 						<div class="iconbox">
 							<div class="iconbox-wrap-icon">
-								<i class="{{ $iconUsers }}"></i>
+							    @if (empty($customIconUsers))
+							        <i class="{{ $iconUsers }}"></i>
+							    @else
+                                    <img src="{{ imgUrl($customIconUsers, 'logo') }}" style="height: 60px;"  />
+								@endif
 							</div>
 							<div class="iconbox-wrap-content">
 								<h5>
@@ -65,7 +76,11 @@
 					<div class="iconbox-wrap">
 						<div class="iconbox">
 							<div class="iconbox-wrap-icon">
-								<i class="{{ $iconLocations }}"></i>
+								@if (empty($customIconLocations))
+							        <i class="{{ $iconLocations }}"></i>
+							    @else
+                                    <img src="{{ imgUrl($customIconLocations, 'logo') }}" style="height: 60px;"  />
+								@endif
 							</div>
 							<div class="iconbox-wrap-content">
 								<h5>

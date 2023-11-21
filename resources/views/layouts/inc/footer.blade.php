@@ -27,6 +27,15 @@
 	@endphp
 	<div class="footer-content{{ $ptFooterContent }}">
 		<div class="container">
+		    {{-- Logo --}}
+		    <div class="row mb-4">
+    			<a class="navbar-brand" href="{{ url('/') }}" target="_blank">
+    				{{-- Logo text --}}
+    				<span class="logo-text m-auto">
+    					<img src="{{ config('settings.app.logo_light_url') }}" alt="{{ strtolower(config('settings.app.name')) }}" class="light-logo img-fluid"/>
+    				</span>
+    			</a>
+			</div>
 			<div class="row {{ $rowColsLg }} {{ $rowColsMd }} row-cols-sm-2 row-cols-2 g-3">
 				
 				@if (!config('settings.footer.hide_links'))
