@@ -70,7 +70,7 @@
 								   data-type="{{ data_get($cat, 'type') }}"
 								>
 							@endif
-								<img src="{{ data_get($cat, 'picture_url') }}" class="lazyload img-fluid" alt="{{ data_get($cat, 'name') }}">
+							    <img src="{{ data_get($cat, 'big_picture_url') }}" class="lazyload img-fluid" style="height: 100%; padding: 0px 15px;" alt="{{ data_get($cat, 'name') }}">
 								<h6 class="{{ !$_hasLink ? 'text-secondary' : '' }}">
 									{{ data_get($cat, 'name') }}
 								</h6>

@@ -115,6 +115,7 @@ trait CategoriesTrait
 			return data_get($categoriesData, 'result');
 		});
 		
+		
 		return is_array($apiResult) ? $apiResult : [];
 	}
 	

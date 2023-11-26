@@ -41,6 +41,7 @@ class CategoryResource extends JsonResource
 		}
 		
 		$entity['picture_url'] = $this->picture_url ?? null;
+		$entity['big_picture_url'] = $this->big_picture_url ?? null;
 		
 		$embed = explode(',', request()->query('embed'));
 		

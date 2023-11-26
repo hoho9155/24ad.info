@@ -93,7 +93,7 @@ class CategoryController extends BaseController
 			
 			return $categories->paginate($this->perPage);
 		});
-		
+
 		// If the request is made from the app's Web environment,
 		// use the Web URL as the pagination's base URL
 		if (!$areNestedEntriesIncluded) {

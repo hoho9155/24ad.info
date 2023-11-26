@@ -71,6 +71,9 @@ class GetPremiumListings
 				'name'  => 'autoplay',
 				'label' => trans('admin.carousel_autoplay'),
 				'type'  => 'checkbox_switch',
+				'wrapperAttributes' => [
+					'class' => 'col-md-6',
+				],
 			],
 			[
 				'name'              => 'autoplay_timeout',

@@ -58,6 +58,7 @@ class CategoryController extends FrontController
 		
 		// Get categories list and format it
 		$categories = data_get($apiResult, 'data', []);
+
 		$formattedCats = $this->formatCategories($categories, $catId);
 		
 		$hasChildren = (
