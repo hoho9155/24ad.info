@@ -3,13 +3,18 @@
 	{{-- Language Selector --}}
 	<li class="nav-item dropdown lang-menu no-arrow open-on-hover">
 		<a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown" id="langDropdown">
-			<span><i class="bi bi-globe2"></i></span>
+			<span>
+			    <!--<i class="bi bi-globe2"></i>-->
+			    <img src="{{ imgUrl('app/Language.png', 'logo') }}" style="height: 24px;" />
+			    {{ strtoupper(config('app.locale')) }}
+			</span>
 			<i class="bi bi-chevron-down"></i>
 		</a>
 		<ul id="langDropdownItems"
 			class="dropdown-menu dropdown-menu-end user-menu shadow-sm"
 			role="menu"
 			aria-labelledby="langDropdown"
+			style="max-height: 60vh; overflow-y: scroll;"
 		>
 			@foreach($supportedLanguages as $langCode => $lang)
 				<li class="dropdown-item{{ (strtolower($langCode) == strtolower(config('app.locale'))) ? ' active' : '' }}">

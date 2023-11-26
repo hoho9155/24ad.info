@@ -15,3 +15,52 @@
 
 /* Your custom CSS here... */
 
+
+.section-promo .iconbox-wrap-content h5, .section-promo .iconbox-wrap-content .iconbox-wrap-text {
+    color: white!important;
+}
+
+.currency-icon {
+    font-size: 18px;
+    color: #636A80;
+}
+.currency-code {
+    margin-bottom: 4px;
+    color: #636A80;
+}
+
+.skin .btn-listing {
+    color: #FFFFFF!important;
+    background-color: #00AAFF;
+    border-color: #00AAFF;
+    background-image: none;
+}
+.skin .btn-listing:hover, .skin .btn-listing:focus, .skin .btn-listing:active, .skin .btn-listing:active:focus, .skin .btn-listing.active, .skin .btn-listing.active:focus, .skin .show > .btn-listing.dropdown-toggle, .skin .open .dropdown-toggle.btn-listing {
+    background-color: #5093F6;
+    border-color: #5093F6;
+    background-image: none;
+}
+
+#categoryBadge {
+    font-size: 16px;
+}
+
+#categoryBadge a img {
+    height: 16px;
+    min-width: 16px;
+}
+
+#categoryBadge .fw-bold img {
+    height: 32px;
+}
+
+.caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 8px dashed;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+}

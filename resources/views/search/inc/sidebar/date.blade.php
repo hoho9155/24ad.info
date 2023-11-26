@@ -21,7 +21,7 @@ $clearFilterBtn = \App\Helpers\UrlGen::getDateFilterClearLink($cat ?? null, $cit
 							   value="{{ $key }}"
 							   id="postedDate_{{ $key }}" {{ (request()->query('postedDate')==$key) ? 'checked="checked"' : '' }}
 						>
-						<label for="postedDate_{{ $key }}">{{ $value }}</label>
+						<label for="postedDate_{{ $key }}">{{ t($value) }}</label>
 					</li>
 				@endforeach
 			@endif

@@ -124,7 +124,8 @@
 					@if (!auth()->check())
 						<li class="nav-item dropdown no-arrow open-on-hover d-md-block d-sm-none d-none">
 							<a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
-								<i class="fas fa-user"></i>
+								<!--<i class="fas fa-user"></i>-->
+								<img src="{{ imgUrl('app/UserCircle.png', 'logo') }}" style="height: 24px;" />
 								<span>{{ t('log_in') }}</span>
 								<i class="bi bi-chevron-down"></i>
 							</a>
@@ -154,7 +155,8 @@
 					@else
 						<li class="nav-item dropdown no-arrow open-on-hover">
 							<a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
-								<i class="fas fa-user-circle"></i>
+								<!--<i class="fas fa-user-circle"></i>-->
+								<img src="{{ imgUrl('app/UserCircle.png', 'logo') }}" style="height: 24px;" />
 								<span>{{ auth()->user()->name }}</span>
 								<span class="badge badge-pill badge-important count-threads-with-new-messages d-lg-inline-block d-md-none">0</span>
 								<i class="bi bi-chevron-down"></i>
@@ -201,7 +203,9 @@
 					@if (config('settings.single.pricing_page_enabled') == '2')
 						<li class="nav-item pricing">
 							<a href="{{ \App\Helpers\UrlGen::pricing() }}" class="nav-link">
-								<i class="fas fa-tags"></i> {{ t('pricing_label') }}
+								<!--<i class="fas fa-tags"></i> -->
+								<img src="{{ imgUrl('app/PricingTag.png', 'logo') }}" style="height: 24px;" />
+								{{ t('pricing_label') }}
 							</a>
 						</li>
 					@endif

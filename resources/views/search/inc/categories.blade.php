@@ -8,7 +8,7 @@
 						<a href="{{ \App\Helpers\UrlGen::category($iSubCat, null, $city ?? null) }}">
 							@if (in_array(config('settings.list.show_category_icon'), [3, 5, 7, 8]))
 								@if (data_get($iSubCat, 'icon_class') == 'empty')
-    						        <img src="{{ imgUrl(data_get($iSubCat, 'picture'), 'logo') }}" style="height: 14px;" />
+    						        <img src="{{ imgUrl(data_get($iSubCat, 'picture'), 'logo') }}" />
     						    @else
     							    <i class="{{ data_get($iSubCat, 'icon_class') ?? 'fas fa-folder' }}"></i>
     							@endif
@@ -27,7 +27,7 @@
 								<span class="fw-bold">
 									@if (in_array(config('settings.list.show_category_icon'), [3, 5, 7, 8]))
 										@if (data_get($iSubCat, 'icon_class') == 'empty')
-            						        <img src="{{ imgUrl(data_get($iSubCat, 'picture'), 'logo') }}" style="height: 14px;" />
+            						        <img src="{{ imgUrl(data_get($iSubCat, 'picture'), 'logo') }}" />
             						    @else
             							    <i class="{{ data_get($iSubCat, 'icon_class') ?? 'fas fa-folder' }}"></i>
             							@endif
@@ -38,7 +38,7 @@
 								<a href="{{ \App\Helpers\UrlGen::category($iSubCat, null, $city ?? null) }}">
 									@if (in_array(config('settings.list.show_category_icon'), [3, 5, 7, 8]))
 										@if (data_get($iSubCat, 'icon_class') == 'empty')
-            						        <img src="{{ imgUrl(data_get($iSubCat, 'picture'), 'logo') }}" style="height: 14px;" />
+            						        <img src="{{ imgUrl(data_get($iSubCat, 'picture'), 'logo') }}" />
             						    @else
             							    <i class="{{ data_get($iSubCat, 'icon_class') ?? 'fas fa-folder' }}"></i>
             							@endif

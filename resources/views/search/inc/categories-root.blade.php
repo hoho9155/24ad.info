@@ -8,7 +8,7 @@
                             @if (data_get($iCat, 'icon_class') == 'empty')
 						        <img src="{{ imgUrl(data_get($iCat, 'picture'), 'logo') }}" style="height: 14px;" />
 						    @else
-							    <i class="{{ data_get($iSubCat, 'icon_class') ?? 'fas fa-folder' }}"></i>
+							    <i class="{{ data_get($iCat, 'icon_class') ?? 'fas fa-folder' }}"></i>
 							@endif
 						@endif
 						{{ data_get($iCat, 'name') }}

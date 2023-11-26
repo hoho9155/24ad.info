@@ -59,6 +59,15 @@ class GetPremiumListings
 				],
 			],
 			[
+				'name'              => 'items_in_carousel',
+				'label'             => trans('admin.items_in_carousel_label'),
+				'type'              => 'checkbox_switch',
+				'hint'              => trans('admin.items_in_carousel_hint'),
+				'wrapperAttributes' => [
+					'class' => 'col-md-6',
+				],
+			],
+			[
 				'name'  => 'autoplay',
 				'label' => trans('admin.carousel_autoplay'),
 				'type'  => 'checkbox_switch',

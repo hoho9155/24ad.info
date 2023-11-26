@@ -1,9 +1,12 @@
 @if (config('settings.currencyexchange.activation'))
 	@if (isset($currencies) && !empty($currencies))
 		<li class="nav-item dropdown no-arrow open-on-hover">
-			<a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown" data-target="#currenciesDropdownMenu">
-				<span>{!! config('selectedCurrency.symbol') !!} {{ config('selectedCurrency.code') }}</span>
-				<i class="fas fa-chevron-down hidden-sm"></i>
+			<a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown" data-target="#currenciesDropdownMenu" style="margin-top: 3px;">
+				<span>
+				    <span class="currency-icon">{!! config('selectedCurrency.symbol') !!} </span>
+				    <span class="currency-code">{{ config('selectedCurrency.code') }}</span>
+				</span>
+				<i class="bi bi-chevron-down"></i>
 			</a>
 			<ul id="currenciesDropdownMenu" class="dropdown-menu user-menu">
 				@foreach($currencies as $iCurr)

@@ -21,9 +21,10 @@
 	$hideOnMobile = (data_get($sectionOptions, 'hide_on_mobile') == '1') ? ' hidden-sm' : '';
 @endphp
 
-@includeFirst([config('larapen.core.customizedViewPath') . 'home.inc.spacer', 'home.inc.spacer'], ['hideOnMobile' => $hideOnMobile])
+<!--@includeFirst([config('larapen.core.customizedViewPath') . 'home.inc.spacer', 'home.inc.spacer'], ['hideOnMobile' => $hideOnMobile])-->
 
-<div class="container{{ $hideOnMobile }}">
+<div style="background: #002233;">
+    <div class="container{{ $hideOnMobile }}">
 	<div class="page-info page-info-lite rounded" style="background: #002233;">
 		<div class="text-center section-promo">
 			<div class="row">
@@ -35,7 +36,7 @@
 							    @if (empty($customIconPosts))
 							        <i class="{{ $iconPosts }}"></i>
 							    @else
-                                    <img src="{{ imgUrl($customIconPosts, 'logo') }}" style="height: 60px;" />
+                                    <img src="{{ imgUrl($customIconPosts, 'logo') }}" style="width: 60px; padding-right: 10px;" />
 								@endif
 							</div>
 							<div class="iconbox-wrap-content">
@@ -57,7 +58,7 @@
 							    @if (empty($customIconUsers))
 							        <i class="{{ $iconUsers }}"></i>
 							    @else
-                                    <img src="{{ imgUrl($customIconUsers, 'logo') }}" style="height: 60px;"  />
+                                    <img src="{{ imgUrl($customIconUsers, 'logo') }}" style="width: 60px; padding-right: 10px;"  />
 								@endif
 							</div>
 							<div class="iconbox-wrap-content">
@@ -79,7 +80,7 @@
 								@if (empty($customIconLocations))
 							        <i class="{{ $iconLocations }}"></i>
 							    @else
-                                    <img src="{{ imgUrl($customIconLocations, 'logo') }}" style="height: 60px;"  />
+                                    <img src="{{ imgUrl($customIconLocations, 'logo') }}" style="width: 60px; padding-right: 10px;"  />
 								@endif
 							</div>
 							<div class="iconbox-wrap-content">
@@ -97,6 +98,7 @@
 			</div>
 		</div>
 	</div>
+</div>
 </div>
 
 @section('after_scripts')
